@@ -1,0 +1,132 @@
+﻿<%@ Master Language="C#" %>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dnyandeep News</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+<link rel="stylesheet" type="text/css" href="assets/css/font.css">
+<link rel="stylesheet" type="text/css" href="assets/css/li-scroller.css">
+<link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+<link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox.css">
+<link rel="stylesheet" type="text/css" href="assets/css/theme.css">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<!--[if lt IE 9]>
+<script src="assets/js/html5shiv.min.js"></script>
+<script src="assets/js/respond.min.js"></script>
+<![endif]-->
+    <style type="text/css">
+        .auto-style1 {
+            display: inline;
+            float: left;
+            width: 38%;
+        }
+    </style>
+</head>
+<body>
+<div id="preloader">
+  <div id="status">&nbsp;</div>
+</div>
+<a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+<div class="container">
+  <header id="header">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="header_top">
+          <div class="header_top_left">
+            <ul class="top_nav">
+              <li><a href="home.aspx">Home</a></li>
+              <li><a href="Aboutus.aspx">About</a></li>
+              <li><a href="Feedback.aspx">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="header_bottom">
+          <div class="auto-style1"><a href="home.aspx" class="logo"><img src="images/Dlogo.jpg" alt=""></a></div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section id="navArea">
+    <nav class="navbar navbar-inverse" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav main_nav">
+          <li class="active"><a href="home.aspx"><span class="fa fa-home desktop-home"></span><span class="mobile-show">Home</span></a></li>
+          <li><a href="LatestNews.aspx">Latest News</a></li>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Senior College</a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="BSCCS.aspx">BSc CS</a></li>
+              <li><a href="BSCIT.aspx">BSc IT</a></li>
+              <li><a href="BCOM.aspx">B COM</a></li>
+            </ul>
+          </li>
+          <li><a href="School.aspx">School</a></li>
+          <li><a href="Achievements.aspx">Achievements</a></li>
+          <li><a href="Feedback.aspx">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+</section>
+      <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+  <footer id="footer">
+    <div class="footer_top">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="footer_widget wow fadeInLeftBig">
+            <h2>Campus</h2>
+              <asp:Image ID="Image2" runat="server" ImageUrl="~/images1/dnyandeep.jpg" Height="150px" Width="200px" />
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="footer_widget wow fadeInDown">
+            <h2>Quick Links</h2>
+            <ul class="tag_nav">
+              <li><a href="LatestNews.aspx">Latest News</a></li>
+              <li><a href="BSCCS.aspx">BSc CS News</a></li>
+              <li><a href="BSCIT.aspx">BSc IT News</a></li>
+              <li><a href="BCOM.aspx">B COM News</a></li>
+              <li><a href="School.aspx">School News</a></li>
+              <li><a href="Achievements.aspx">Our Achievements</a></li>
+              <li><a href="userlogin.aspx">User Login</a></li>
+              <li><a href="adminlogin.aspx">Admin Login</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="footer_widget wow fadeInRightBig">
+            <h2>Contact</h2>
+            <p>Dnyandeep Shikshan Prasarak Mandal, Khed, (Ratnagiri), the leading and renowned Educational Institute, was established on 25th June 1999.</p>
+            <address>
+            Gmail:Dnyandeepcollege@gmail.com<br />Website:www.Dnyandeepcollege.org<br />Phone no.:+917719810000<br />Address:A/p. Morvande-Boraj,Tal.Khed,
+Dist.Ratnagiri 415709
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer_bottom">
+      <p class="copyright">Copyright &copy; 2022 <a href="home.aspx">Dnyandeep News</a></p>
+      <p class="developer">Developed By Ayyan Bebal</p>
+    </div>
+  </footer>
+</div>
+<script src="assets/js/jquery.min.js"></script> 
+<script src="assets/js/wow.min.js"></script> 
+<script src="assets/js/bootstrap.min.js"></script> 
+<script src="assets/js/slick.min.js"></script> 
+<script src="assets/js/jquery.li-scroller.1.0.js"></script> 
+<script src="assets/js/jquery.newsTicker.min.js"></script> 
+<script src="assets/js/jquery.fancybox.pack.js"></script> 
+<script src="assets/js/custom.js"></script>
+</body>
+</html>
